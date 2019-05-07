@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Алексей Суслов](https://up.htmlacademy.ru/htmlcss/25/user/1062841).
-* Наставник: `Неизвестно`.
+* Наставник: [Roman Kushnir] (https://htmlacademy.ru/profile/id485545).
 
 ---
 
