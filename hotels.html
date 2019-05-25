@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href='index.html'>
-          <img src="img/index-logo.svg" alt="City of Sedona">
+          <img src="img/logo.png" alt="City of Sedona">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -19,30 +19,85 @@
       </nav>
     </header>
   <main>
-     <section class='result'>
-       <img src='#' >
-     <p class="resultname">Amara Resort & Spa</p>
-     <p class="resultname-description">гостиница</p>
-        <a class="button" href="more.html">подробнее</a>
-        <a class="button" href="reservation.html">забронировать</a>
-        <p class="rating"> рейтинг </p>
-     </section>
-     <section class='result'>
-       <img src='#' >
-     <p class="resultname">Desert Quail Inn</p>
-     <p class="resultname-description">мотель</p>
-        <a class="button" href="more.html">подробнее</a>
-        <a class="button" href="reservation.html">забронировать</a>
-        <p class="rating"> рейтинг </p>
-     </section>
-     <section class="result">
-     <img src='#' >
-   <p class="resultname">Villas at poco Diablo</p>
-   <p class="resultname-description"> апартаменты </p>
-      <a class="button" href="more.html">подробнее</a>
-      <a class="button" href="reservation.html">забронировать</a>
-      <p class="rating"> рейтинг </p>
-    </section>
+    <h1 class='visually-hidden'>Поиск гостиниц</h1>
+      <form class='additionally' method='get' action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+            <ul>
+              <li class='additionally-item'>
+                <label><input type="checkbox" name="infrastructure" checked>бассейн</label>
+              </li>
+              <li class='additionally-item'>
+                <label><input type="checkbox" name="parking">парковка</label>
+              </li>
+              <li class='additionally-item'>
+                <label><input type="checkbox" name="wi-fi" checked>wi-fi</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+          <legend>тип жилья</legend>
+          <ul>
+            <li class='additionally-item'>
+              <label><input type="checkbox" name="hotel" checked>гостиница</label>
+            </li>
+            <li class='additionally-item'>
+              <label><input type="checkbox" name="motel" checked>мотель</label>
+            </li>
+            <li class='additionally-item'>
+              <label><input type="checkbox" name="apartament" checked>апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>стоимость в сутки</legend>    <!--дб 2 ползунка-->
+          <input type='range' name='cost-per-day' min='0' max='5000'>
+        </fieldset>
+      </form>
+
+      <section>
+        <p class="found-result">найдено:3</p>
+        <p class='sorting-result'>Сортировка</p>
+        <ul>
+          <li class='sorting-result-item'>по цене</li>
+          <li class='sorting-result-item'>по типу</li>
+          <li class='sorting-result-item'>по рейтингу</li>
+        </ul>
+      </section>
+
+      <div class='up-down-arrows'>
+        <img src="img/arrow-up-icon.svg" alt="Сортировка Вверх">
+        <img src="img/arrow-down-icon.svg" alt="Сортировка Вниз">
+      </div>
+
+     <article class='result'>
+       <img src='img/amara-resort.jpg' alt="Amara Resort & Spa">
+       <h2 class="resultname">Amara Resort & Spa</h2>
+       <p class="resultname-description">гостиница</p>
+       <p class="resultname-description-cost">от 4000 р.</p>
+        <a class="button button-more" href="more.html">подробнее</a>
+        <a class="button button-to-book" href="reservation.html">забронировать</a>
+        <img src='img/star-icon.svg' alt="Рейтинг">
+        <p class="rating"> рейтинг: 8,5 </p>
+     </article>
+     <article class='result'>
+       <img src='img/desert-qualin.jpg' alt="Desert Quail Inn">
+        <h2 class="resultname">Desert Quail Inn</h2>
+        <p class="resultname-description"><span>мотель</span> <span>от 3000 Р.</span></p>
+        <a class="button button-more" href="more.html">подробнее</a>
+        <a class="button button-to-book" href="reservation.html">забронировать</a>
+        <img src='img/star-icon.svg' alt="Рейтинг">
+        <p class="rating"> рейтинг: 8,9 </p>
+     </article>
+     <article class="result">
+       <img src='img/villas-at-poco.jpg' alt="Villas at poco Diablo">
+        <h2 class="resultname">Villas at poco Diablo</h2>
+        <p class="resultname-description"> <span>апартаменты</span> <span>от 2000 Р.</span> </p>
+        <a class="button button-more" href="more.html">подробнее</a>
+        <a class="button button-to-book" href="reservation.html">забронировать</a>
+        <img src='img/star-icon.svg' alt="Рейтинг">
+        <p class="rating"> рейтинг: 9,2 </p>
+    </article>
   </main>
     <footer class="main-footer">
      <p class="footerhashtag">#visitsedona</p>
