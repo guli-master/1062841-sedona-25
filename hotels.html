@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href='css/normalize.css' rel='stylesheet'>
+    <link href='css/style.css' rel='stylesheet'>
   </head>
   <body>
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href='index.html'>
-          <img src="img/logo.png" alt="City of Sedona">
+          <img src="img/logo.svg" alt="City of Sedona">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -53,51 +56,62 @@
           <legend>стоимость в сутки</legend>    <!--дб 2 ползунка-->
           <input type='range' name='cost-per-day' min='0' max='5000'>
         </fieldset>
+
+          <label> <input type='submit' value='submit'>Показать </label>
       </form>
 
       <section>
-        <p class="found-result">найдено:3</p>
+        <p class="found-result">найдено:</p>
         <p class='sorting-result'>Сортировка</p>
         <ul>
-          <li class='sorting-result-item'>по цене</li>
-          <li class='sorting-result-item'>по типу</li>
-          <li class='sorting-result-item'>по рейтингу</li>
+          <li class='sorting-result-item'>
+            <button class="button" type='button'> по цене</button>
+          </li>
+          <li class='sorting-result-item'>
+            <button class="button" type="button">по типу</button>
+          </li>
+          <li class='sorting-result-item'>
+            <button class="button" type="button">по рейтингу</button>
+          </li>
         </ul>
+        <button class="button button-arrow-up"><img src='img/arrow-up-icon.svg'>Вверх</button>
+        <button class="button button-arrow-down">Вниз</button>
       </section>
-
-      <div class='up-down-arrows'>
-        <img src="img/arrow-up-icon.svg" alt="Сортировка Вверх">
-        <img src="img/arrow-down-icon.svg" alt="Сортировка Вниз">
-      </div>
-
-     <article class='result'>
+<ul class="result-list">
+  <li class="result-item">
+     <article class='housing'>
        <img src='img/amara-resort.jpg' alt="Amara Resort & Spa">
-       <h2 class="resultname">Amara Resort & Spa</h2>
-       <p class="resultname-description">гостиница</p>
-       <p class="resultname-description-cost">от 4000 р.</p>
+       <h2 class="housing-title"> <a href=''>Amara Resort & Spa</a></h2>
+       <p class="housing-type"><span>гостиница</span> <span>от 4000 р.</span></p>
         <a class="button button-more" href="more.html">подробнее</a>
         <a class="button button-to-book" href="reservation.html">забронировать</a>
         <img src='img/star-icon.svg' alt="Рейтинг">
         <p class="rating"> рейтинг: 8,5 </p>
-     </article>
-     <article class='result'>
+    </article>
+  </li>
+  <li class="result-item">
+     <article class='housing'>
        <img src='img/desert-qualin.jpg' alt="Desert Quail Inn">
-        <h2 class="resultname">Desert Quail Inn</h2>
-        <p class="resultname-description"><span>мотель</span> <span>от 3000 Р.</span></p>
+        <h2 class="housing-title"> <a href=''>Desert Quail Inn</a></h2>
+        <p class="housing-type"><span>мотель</span> <span>от 3000 Р.</span></p>
         <a class="button button-more" href="more.html">подробнее</a>
         <a class="button button-to-book" href="reservation.html">забронировать</a>
         <img src='img/star-icon.svg' alt="Рейтинг">
         <p class="rating"> рейтинг: 8,9 </p>
      </article>
-     <article class="result">
+   </li>
+   <li class="result-item">
+     <article class="housing">
        <img src='img/villas-at-poco.jpg' alt="Villas at poco Diablo">
-        <h2 class="resultname">Villas at poco Diablo</h2>
-        <p class="resultname-description"> <span>апартаменты</span> <span>от 2000 Р.</span> </p>
+        <h2 class="housing-title"><a href=''>Villas at poco Diablo</a></h2>
+        <p class="housing-type"> <span>апартаменты</span> <span>от 2000 Р.</span> </p>
         <a class="button button-more" href="more.html">подробнее</a>
         <a class="button button-to-book" href="reservation.html">забронировать</a>
         <img src='img/star-icon.svg' alt="Рейтинг">
         <p class="rating"> рейтинг: 9,2 </p>
-    </article>
+     </article>
+    </li>
+  </ul>
   </main>
     <footer class="main-footer">
      <p class="footerhashtag">#visitsedona</p>
@@ -110,7 +124,7 @@
      </div>
      <p class="footer-copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="button html-button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
    </footer>
 
