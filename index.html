@@ -10,21 +10,23 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo.svg" alt="City of Sedona">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photovid.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="hotels.html">Гостиницы</a></li>
         </ul>
+        <a class="main-header-logo">
+          <a class="main-header-logo">
+            <img src="img/logo.svg" alt="City of Sedona">
+          </a>
+        </a>
       </nav>
     </header>
     <main class="">
     <div>
       <h1 class="visually-hidden">Welcome to Sedona</h1>
-      <img src="img/welcome-to-Sedona.svg" alt="Добро пожаловать в Седону">
+      <img src="img/welcome.svg" alt="Добро пожаловать в Седону">
       <img src='img/hero-image.jpg' alt="Фон">
     </div>
     <section class="advantages">
@@ -82,13 +84,13 @@
         <form class='specify-date' action='https://echo.htmlacademy.ru' method='get'>
             <p class="specify-date-in">
               <label>Дата заезда:
-               <input type='date' name='date-in' value=''>
+               <input type='text' name='date-in' value=''>
                <img src='img/calendar-icon.svg' alt="">
              </label>
             </p>
           <p class="specify-date-out">
             <label>Дата выезда:
-              <input type='date' name='date-out' value=''>
+              <input type='text' name='date-out' value=''>
               <img src='img/calendar-icon.svg' alt="">
             </label>
           </p>
@@ -102,7 +104,7 @@
               <input type='number' min='0' name='number-of-children' value='' placeholder='1'>
             </label>
           </p>
-            <button class='to-find-button' type='submit'>Найти</button>
+            <button class='button to-find-button' type='submit'>Найти</button>
          </form>
       </section>
    </main>
