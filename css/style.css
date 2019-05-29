@@ -6,6 +6,7 @@ line-height: 21px;
 color: rgb(0, 0, 0);
 text-transform:uppercase;
 background-color: #f2f2f2;
+text-align: center;
 }
 
 a {
@@ -33,9 +34,6 @@ font-size: 21px;
 color: rgb(0, 0, 0);
 font-weight: bold;
 line-height: 26px;
-text-align: center;
-width: 440px;
-height: 48px;
 background-color: #ffffff;
 }
 
@@ -154,7 +152,7 @@ color:#88b6d1;
 }
 
 .button-to-book:active,
-.to-find-button:active {
+.search-button:active {
 background-color: #503e33;
   color: #857871;
 }
@@ -206,4 +204,8 @@ padding: 5px;
 .footer-copyright {
 line-height: 30px;
 font-weight: lighter;
+}
+
+.hero {
+  width: 98%;
 }
