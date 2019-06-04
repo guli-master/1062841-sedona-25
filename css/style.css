@@ -26,6 +26,7 @@ text-align: center;
 }
 
 .visually-hidden {
+  display: none;
 
 }
 
@@ -207,5 +208,57 @@ font-weight: lighter;
 }
 
 .hero {
-  width: 98%;
+display: flex;
+position: relative;
+width: 1200px;
+height:  800px;
+}
+
+.welcome-pic {
+display: flex;
+position: absolute;
+width: 459px;
+height: 353px;
+}
+
+/*-- wer--------- -->*/
+
+
+body > * {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.main-header {
+display: flex;
+width: 1200px;
+margin-top: 0;
+margin-bottom: 10px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.site-navigation li {
+display: flex;
+height: 60px;
+width: 240px;
+align-items: center;
+justify-content:center;
+background-color: #fff;
+box-sizing: border-box;
+}
+
+ul.site-navigation {
+display: flex;
+width: 1200px;
+flex-direction: row;
+margin: 0 auto;
+box-sizing: border-box;
+}
+
+.main div {
+display:flex;
+width: 1200px;
+flex-direction: row;
+justify-content: center;
+margin: 0 auto;
 }
