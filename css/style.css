@@ -327,3 +327,56 @@ height: 255px;
 flex-direction: column;
 justify-content: center;
 }
+
+.interest-specify-date {
+margin-bottom: 50px;
+}
+
+.search-button {
+ width: 570px;
+ height: 60px;
+}
+
+.specify-date {
+width: 575px;
+height: 395px;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+padding: 0;
+margin: 0 auto;
+}
+
+.input-date {
+  padding: 0 auto;
+  margin: 0 10px;
+  width: 345px;
+  height: 40px;
+
+}
+
+to-find-button {
+  width: 460px;
+  height: 60px;
+}
+
+.input-people {
+  height: 40px;
+  width: 115px;
+  margin: 0 10px;
+}
+
+.people {
+  display: flex;
+  width: 575px;
+  justify-content: space-around;
+  padding: 0 auto;
+  margin: 0 auto;
+
+}
+.to-find-button {
+  width: 460px;
+  height: 60px;
+}
+}

@@ -90,26 +90,28 @@
         <form class='specify-date' action='https://echo.htmlacademy.ru' method='get'>
             <p class="specify-date-in">
               <label>Дата заезда:
-               <input type='text' name='date-in' value=''>
+               <input class="input-date" type='text' name='date-in' value=''>
                <img src='img/calendar-icon.svg' alt="">
              </label>
             </p>
           <p class="specify-date-out">
             <label>Дата выезда:
-              <input type='text' name='date-out' value=''>
+              <input class="input-date" type='text' name='date-out' value=''>
               <img src='img/calendar-icon.svg' alt="">
             </label>
           </p>
-          <p class='adults'>
+          <div class="people">
+          <p class='people adults'>
             <label> Взрослые:
-              <input type='number' min='0' name='number-of-adults' value='' placeholder='2'>
+              <input class="input-people" type='number' min='0' name='number-of-adults' value='' placeholder='2'>
             </label>
           </p>
-          <p class='children'>
+          <p class='people children'>
             <label> Дети:
-              <input type='number' min='0' name='number-of-children' value='' placeholder='1'>
+              <input class="input-people" type='number' min='0' name='number-of-children' value='' placeholder='1'>
             </label>
           </p>
+        </div>
             <button class='button to-find-button' type='submit'>Найти</button>
          </form>
       </section>
